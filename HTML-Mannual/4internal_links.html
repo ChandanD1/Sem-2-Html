@@ -1,0 +1,89 @@
+<!-- 4. Create a web page for internal links; when the user clicks
+on different links on the web page it should go to the appropriate
+locations/sections in the same page. -->
+
+<!-- Theory:
+This HTML code demonstrates the implementation of internal 
+links within a webpage using anchor tags (<a>). Each link is assigned 
+an href attribute with the ID of the target section, allowing users 
+to navigate seamlessly within the same page. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal Links</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  header {
+    background-color: #8ecef6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  nav {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  section {
+    padding: 20px;
+  }
+  footer {
+    background-color:#8ecef6;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Internal Links</h1>
+</header>
+
+<nav>
+  <a href="./1first_page.html">Page 1</a>
+  <a href="./4internal_links.html">Page 2</a>
+  <a href="./3-hyperlink-html/3.html">Page 3</a>
+</nav>
+
+<section id="section1">
+  <h2>Page 1</h2>
+  <p>This is the content of Page 1.</p>
+  <p><a href="./1first_page.html">Click Here</a></p>
+</section>
+
+<section id="section2">
+  <h2>Page 2</h2>
+  <p>This is the content of Page 2.</p>
+  <p><a href="./4internal_links.html">Click Here</a></p>
+</section>
+
+<section id="section3">
+  <h2>Page 3</h2>
+  <p>This is the content of Page 3.</p>
+  <p><a href="./3-hyperlink-html/3.html">Click here</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Internal Links</p>
+</footer>
+
+</body>
+</html>

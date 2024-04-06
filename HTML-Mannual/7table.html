@@ -1,0 +1,79 @@
+<!-- 7. Create the following table in HTML with following Data 
+for your batch:
+
+| Reg. No | Student Name | Year/Semester | Date Of Admission |
+|---------|--------------|---------------|-------------------|
+|---------|--------------|---------------|-------------------|
+|---------|--------------|---------------|-------------------|
+|---------|--------------|---------------|-------------------| -->
+
+<!-- Theory: 
+Employing HTML's <table> element, this code efficiently organizes 
+student data into rows and columns, with inline CSS used to style 
+headers (<th>) and table cells (<td>), providing a visually appealing 
+and easy-to-read format for presenting student information. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Batch Details</title>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</head>
+<body>
+
+<h1>Batch Details</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Reg. Number</th>
+      <th>Student Name</th>
+      <th>Year/Semester</th>
+      <th>Date of Admission</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>001</td>
+      <td>Tanmay Gharat</td>
+      <td>Year 1 / Semester 1</td>
+      <td>2023-09-01</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Gaurang Jadhav</td>
+      <td>Year 1 / Semester 1</td>
+      <td>2023-09-01</td>
+    </tr>
+    <tr>
+      <td>003</td>
+      <td>Jeevan Naidu</td>
+      <td>Year 1 / Semester 1</td>
+      <td>2023-09-01</td>
+    </tr>
+    <tr>
+        <td>004</td>
+        <td>Rafe Shaikh</td>
+        <td>Year 1 / Semester 1</td>
+        <td>2023-09-01</td>
+      </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
